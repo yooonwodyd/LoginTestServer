@@ -1,1 +1,8 @@
-
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/CommunityAPp
+    username: root
+    password: dbswodyd91
+  jpa:
+    hibernate.ddl-auto: create
+    show-sql: true
