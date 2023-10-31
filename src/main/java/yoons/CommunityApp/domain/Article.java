@@ -1,4 +1,4 @@
-package yoons.CommunityApp.Domain;
+package yoons.CommunityApp.domain;
 
 
 import jakarta.persistence.*;
@@ -9,7 +9,7 @@ import lombok.ToString;
 @Getter
 @Entity
 @ToString(callSuper = true)
-public class Article {
+public class Article extends AuditingFields {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
